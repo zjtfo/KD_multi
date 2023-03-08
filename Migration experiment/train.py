@@ -591,7 +591,7 @@ def main():
     parser.add_argument("--T", type=float, default=6.0)
     parser.add_argument("--teacher-ckpt-sparql", default='./Bart_SPARQL_50/output/checkpoint/checkpoint-best')
     parser.add_argument("--teacher-ckpt-dcs", default='./Bart_DCS_50/output/checkpoint/checkpoint-best')
-    parser.add_argument("--teacher-ckpt-kopl", default='./Bart_Program_50/output_test/checkpoint/checkpoint-69161')
+    parser.add_argument("--teacher-ckpt-kopl", default='./Bart_Program_50/output_test/checkpoint/checkpoint-69161') # 这个就是baseline(Bart)模型
     parser.add_argument("--kd_rep_weight", type=float, default=0.8)
 
     # transfer_based
