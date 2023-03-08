@@ -4,4 +4,4 @@ We provide the baseline Bart model as well as the code for our approach. Impleme
 Here, we offer the checkpoint for both the baseline Bart model and our approach, which can be accessed by clicking [here](https://pan.baidu.com/s/1I1XWRNJKmsFn0IwvzcSc5A).
 提取码: i77b
 
-Please click [here]() to download several checkpoints involved in the train.py file.
+Please click the link below to download several checkpoints involved in the train.py file.
