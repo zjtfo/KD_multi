@@ -229,8 +229,8 @@ def main():
     parser = argparse.ArgumentParser()
     # input and output
     parser.add_argument('--input_dir', default='./Multi_Teacher_In_Questions/preprocessed_data_next')
-    parser.add_argument('--save_dir', default='./Multi_Teacher_In_Questions/circle_count_encoder_multihop_guide_count_again/output/predict_result_8220', help='path to save checkpoints and logs')
-    parser.add_argument('--ckpt', default='./Multi_Teacher_In_Questions/circle_count_encoder_multihop_guide_count_again/output/checkpoint/checkpoint-8220')
+    parser.add_argument('--save_dir', default='./Multi_Teacher_In_Questions/ablation_study/ablation_without_self_distillation/output/predict_result_17125', help='path to save checkpoints and logs')
+    parser.add_argument('--ckpt', default='./Multi_Teacher_In_Questions/ablation_study/ablation_without_self_distillation/output/checkpoint/checkpoint-17125')
 
     # training parameters
     parser.add_argument('--batch_size', default=256, type=int)
