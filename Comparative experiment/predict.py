@@ -102,7 +102,7 @@ def predict(args, model, data, device, tokenizer, executor):
                 f.write(ans + '\n')
 
 
-
+# 单机单卡
 # def validate(model, data, device, tokenizer, executor):
 #     model.eval()
 #     count, correct = 0, 0
@@ -153,6 +153,7 @@ def predict(args, model, data, device, tokenizer, executor):
 #         return acc
 
 
+# 单机多卡
 def validate(model, data, tokenizer, executor):
     model.eval()
     count, correct = 0, 0
@@ -201,8 +202,6 @@ def validate(model, data, tokenizer, executor):
         logging.info('acc: {}'.format(acc))
 
         return acc
-
-
 
 
 def train(args):
