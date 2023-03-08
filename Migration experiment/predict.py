@@ -248,9 +248,9 @@ def main():
     parser = argparse.ArgumentParser()
     # input and output
     parser.add_argument('--input_dir', default='./try_cycle_generation/multi_teacher/Stage_2_3_three_teacher_selfkopl_encoder_sparql_dcs/preprocessed_data')  # 调试的时候路径用一个点，在下方终端Bart_Program下运行用两个点，对于这个项目要想统一，看should_read.md文件
-    parser.add_argument('--save_dir', default='./try_cycle_generation/multi_teacher/Stage_2_3_three_teacher_selfkopl_encoder_sparql_dcs/output_raw_04/predict_result_75175', help='path to save checkpoints and logs')
+    parser.add_argument('--save_dir', default='./try_cycle_generation/multi_teacher/Stage_2_3_three_teacher_selfkopl_encoder_sparql_dcs/output_raw/predict_result_75175', help='path to save checkpoints and logs')
     # parser.add_argument('--model_name_or_path', default='./model/bart-base')
-    parser.add_argument('--ckpt',  default='./try_cycle_generation/multi_teacher/Stage_2_3_three_teacher_selfkopl_encoder_sparql_dcs/output_raw_04/checkpoint/checkpoint-75175')
+    parser.add_argument('--ckpt',  default='./try_cycle_generation/multi_teacher/Stage_2_3_three_teacher_selfkopl_encoder_sparql_dcs/output_raw/checkpoint/checkpoint-75175')
 
     # training parameters
     parser.add_argument('--batch_size', default=256, type=int)
