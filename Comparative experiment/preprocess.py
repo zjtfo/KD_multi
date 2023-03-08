@@ -92,9 +92,10 @@ def main():
         'answer_token_to_idx': {}
     }
     print('Load questions')
-    train_set = json.load(open(os.path.join(args.input_dir, 'verify_train.json')))
-    val_set = json.load(open(os.path.join(args.input_dir, 'verify_val.json')))
-    test_set = json.load(open(os.path.join(args.input_dir, 'verify_test.json')))
+#     multihop以及logical两类问题同样这样进行预处理
+    train_set = json.load(open(os.path.join(args.input_dir, 'count_train.json')))
+    val_set = json.load(open(os.path.join(args.input_dir, 'count_val.json')))
+    test_set = json.load(open(os.path.join(args.input_dir, 'count_test.json')))
     for question in chain(train_set, val_set, test_set):
         for a in question['choices']:
             if not a in vocab['answer_token_to_idx']:
@@ -102,7 +103,7 @@ def main():
 
     if not os.path.isdir(args.output_dir):
         os.mkdir(args.output_dir)
-    fn = os.path.join(args.output_dir, 'verify_vocab.json')
+    fn = os.path.join(args.output_dir, 'count_vocab.json')
     print('Dump vocab to {}'.format(fn))
     with open(fn, 'w') as f:
         json.dump(vocab, f, indent=2)
@@ -116,7 +117,7 @@ def main():
         outputs = encode_dataset(dataset, vocab, tokenizer, name=='test')
         assert len(outputs) == 5
         print('shape of input_ids of questions, attention_mask of questions, input_ids of sparqls, choices and answers:')
-        with open(os.path.join(args.output_dir, '{}.pt'.format("verify_" + name)), 'wb') as f:
+        with open(os.path.join(args.output_dir, '{}.pt'.format("count_" + name)), 'wb') as f:
             for o in outputs:
                 print(o.shape)
                 pickle.dump(o, f)
