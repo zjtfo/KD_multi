@@ -10,7 +10,7 @@ def main():
         res.append(answer)
     print(len(res))
 
-    pred_fn = './Multi_Teacher_In_Questions/circle_count_encoder_multihop_guide_count_again/output/predict_result_8220/predict.txt'
+    pred_fn = './Multi_Teacher_In_Questions/ablation_study/ablation_without_self_distillation/output/predict_result_8220/predict.txt'
     pred = [x.strip() for x in open(pred_fn).readlines()] # one prediction per line
 
     print(len(pred))
