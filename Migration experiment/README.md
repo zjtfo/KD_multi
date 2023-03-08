@@ -15,7 +15,7 @@ Please click the link below to download several checkpoints involved in the trai
 [teacher-ckpt-kopl](https://pan.baidu.com/s/1zTesiNCRAHkrMgpsI0aoNw)
 提取码: 8xr6
 
-[transfer-ckpt-sparql]()
-
+[transfer-ckpt-sparql](https://pan.baidu.com/s/14onAoT8JeoVB0ooFK9uNZA)
+提取码: 5248
 
 [transfer-ckpt-dcs]()
