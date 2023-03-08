@@ -18,4 +18,5 @@ Please click the link below to download several checkpoints involved in the trai
 [transfer-ckpt-sparql](https://pan.baidu.com/s/14onAoT8JeoVB0ooFK9uNZA)
 提取码: 5248
 
-[transfer-ckpt-dcs]()
+[transfer-ckpt-dcs](https://pan.baidu.com/s/1f-_BPWNqlL7xSRn-Ecp4Zw)
+提取码: cjk2
