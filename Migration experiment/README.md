@@ -5,3 +5,14 @@ Here, we offer the checkpoint for both the baseline Bart model and our approach,
 提取码: i77b
 
 Please click the link below to download several checkpoints involved in the train.py file.
+
+[teacher-ckpt-sparql](https://pan.baidu.com/s/14OFcJMKmExUEZJdzzDYDuA)
+提取码: y3xr
+
+[teacher-ckpt-dcs]()
+
+[teacher-ckpt-kopl]()
+
+[transfer-ckpt-sparql]()
+
+[transfer-ckpt-dcs]()
